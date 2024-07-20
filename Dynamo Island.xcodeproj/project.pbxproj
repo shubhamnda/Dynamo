@@ -13,7 +13,6 @@
 		94A914F82C4B75B900DE96F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A914F72C4B75B900DE96F8 /* Preview Assets.xcassets */; };
 		94A914FF2C4B7CD600DE96F8 /* SlideToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A914FE2C4B7CD600DE96F8 /* SlideToggleStyle.swift */; };
 		94A915012C4B864800DE96F8 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A915002C4B864800DE96F8 /* ColorPickerView.swift */; };
-		94A915032C4B96DC00DE96F8 /* DynamicIslandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A915022C4B96DC00DE96F8 /* DynamicIslandManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +36,6 @@
 		94A914F72C4B75B900DE96F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94A914FE2C4B7CD600DE96F8 /* SlideToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToggleStyle.swift; sourceTree = "<group>"; };
 		94A915002C4B864800DE96F8 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
-		94A915022C4B96DC00DE96F8 /* DynamicIslandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				94A914F22C4B75B700DE96F8 /* ContentView.swift */,
 				94A914FE2C4B7CD600DE96F8 /* SlideToggleStyle.swift */,
 				94A915002C4B864800DE96F8 /* ColorPickerView.swift */,
-				94A915022C4B96DC00DE96F8 /* DynamicIslandManager.swift */,
 				94A914F42C4B75B900DE96F8 /* Assets.xcassets */,
 				94A914F62C4B75B900DE96F8 /* Preview Content */,
 			);
@@ -160,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A915032C4B96DC00DE96F8 /* DynamicIslandManager.swift in Sources */,
 				94A915012C4B864800DE96F8 /* ColorPickerView.swift in Sources */,
 				94A914FF2C4B7CD600DE96F8 /* SlideToggleStyle.swift in Sources */,
 				94A914F32C4B75B700DE96F8 /* ContentView.swift in Sources */,
