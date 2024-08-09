@@ -158,7 +158,7 @@ struct SlideToggleStyle: ToggleStyle {
     }
     
     private var ledColor: Color {
-        isOn ? .ledGreen : .ledRed
+        isOn ? .ledGreen : .toggleBG
     }
     
     private var neonGradient: LinearGradient {

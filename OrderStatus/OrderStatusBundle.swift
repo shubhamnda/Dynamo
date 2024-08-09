@@ -11,7 +11,6 @@ import SwiftUI
 @main
 struct OrderStatusBundle: WidgetBundle {
     var body: some Widget {
-        OrderStatus()
         OrderStatusLiveActivity()
     }
 }

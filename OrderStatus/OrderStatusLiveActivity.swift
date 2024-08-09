@@ -1,38 +1,28 @@
-//
-//  OrderStatusLiveActivity.swift
-//  OrderStatus
-//
-//  Created by Shubham Nanda on 24/07/24.
-//
-
 import ActivityKit
 import WidgetKit
 import SwiftUI
 
 struct OrderStatusAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var emoji: String
+        var value: Int
     }
 
-    // Fixed non-changing properties about your activity go here!
     var name: String
 }
 
 struct OrderStatusLiveActivity: Widget {
+    
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: OrderStatusAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
-                Text("Hello \(context.state.emoji)")
+                // Your lock screen content
             }
             .activityBackgroundTint(Color.cyan)
             .activitySystemActionForegroundColor(Color.black)
-
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
+                // Expanded UI goes here
                 DynamicIslandExpandedRegion(.leading) {
                     Text("Leading")
                 }
@@ -40,19 +30,24 @@ struct OrderStatusLiveActivity: Widget {
                     Text("Trailing")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
-                    // more content
+                    // More content
                 }
             } compactLeading: {
                 Text("L")
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+                Text("T")
             } minimal: {
-                Text(context.state.emoji)
+                Text("Minimal")
             }
             .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
+            .keylineTint(dynamicTintColor)
         }
+    }
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    var dynamicTintColor: Color {
+        return colorScheme == .dark ? .red: .white
     }
 }
 
@@ -64,17 +59,24 @@ extension OrderStatusAttributes {
 
 extension OrderStatusAttributes.ContentState {
     fileprivate static var smiley: OrderStatusAttributes.ContentState {
-        OrderStatusAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: OrderStatusAttributes.ContentState {
-         OrderStatusAttributes.ContentState(emoji: "🤩")
-     }
+        OrderStatusAttributes.ContentState(value: 0)
+    }
 }
 
 #Preview("Notification", as: .content, using: OrderStatusAttributes.preview) {
-   OrderStatusLiveActivity()
+    OrderStatusLiveActivity()
 } contentStates: {
     OrderStatusAttributes.ContentState.smiley
-    OrderStatusAttributes.ContentState.starEyes
+}
+
+#Preview("Expanded", as: .dynamicIsland(.expanded), using: OrderStatusAttributes.preview) {
+    OrderStatusLiveActivity()
+} contentStates: {
+    OrderStatusAttributes.ContentState.smiley
+}
+
+#Preview("Compact", as: .dynamicIsland(.compact), using: OrderStatusAttributes.preview) {
+    OrderStatusLiveActivity()
+} contentStates: {
+    OrderStatusAttributes.ContentState.smiley
 }

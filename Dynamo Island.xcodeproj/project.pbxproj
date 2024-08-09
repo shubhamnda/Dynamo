@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94439FB92C5144F90089DCF2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9475CBFE2C5124850020DEB6 /* WidgetKit.framework */; };
+		94439FBA2C5144F90089DCF2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A9152B2C4BA90000DE96F8 /* SwiftUI.framework */; };
+		94439FBD2C5144F90089DCF2 /* OrderStatusBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94439FBC2C5144F90089DCF2 /* OrderStatusBundle.swift */; };
+		94439FBF2C5144F90089DCF2 /* OrderStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94439FBE2C5144F90089DCF2 /* OrderStatusLiveActivity.swift */; };
+		94439FC32C5144FB0089DCF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94439FC22C5144FB0089DCF2 /* Assets.xcassets */; };
+		94439FC72C5144FB0089DCF2 /* OrderStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 94439FB82C5144F90089DCF2 /* OrderStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94439FCB2C51452F0089DCF2 /* OrderStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94439FBE2C5144F90089DCF2 /* OrderStatusLiveActivity.swift */; };
+		9475CBF62C5122390020DEB6 /* SlideToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A914FE2C4B7CD600DE96F8 /* SlideToggleStyle.swift */; };
 		94A914F12C4B75B700DE96F8 /* Dynamo_IslandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A914F02C4B75B700DE96F8 /* Dynamo_IslandApp.swift */; };
 		94A914F32C4B75B700DE96F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A914F22C4B75B700DE96F8 /* ContentView.swift */; };
 		94A914F52C4B75B900DE96F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A914F42C4B75B900DE96F8 /* Assets.xcassets */; };
 		94A914F82C4B75B900DE96F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A914F72C4B75B900DE96F8 /* Preview Assets.xcassets */; };
-		94A914FF2C4B7CD600DE96F8 /* SlideToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A914FE2C4B7CD600DE96F8 /* SlideToggleStyle.swift */; };
 		94A915012C4B864800DE96F8 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A915002C4B864800DE96F8 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94439FC52C5144FB0089DCF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94A914E52C4B75B700DE96F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94439FB72C5144F90089DCF2;
+			remoteInfo = OrderStatusExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		94A915202C4B9A8B00DE96F8 /* Embed Foundation Extensions */ = {
@@ -22,6 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				94439FC72C5144FB0089DCF2 /* OrderStatusExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,6 +47,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		94439FB82C5144F90089DCF2 /* OrderStatusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OrderStatusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		94439FBC2C5144F90089DCF2 /* OrderStatusBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusBundle.swift; sourceTree = "<group>"; };
+		94439FBE2C5144F90089DCF2 /* OrderStatusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusLiveActivity.swift; sourceTree = "<group>"; };
+		94439FC22C5144FB0089DCF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94439FC42C5144FB0089DCF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94439FCC2C5145D10089DCF2 /* Dynamo-Island-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Dynamo-Island-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9475CBFE2C5124850020DEB6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		94A914ED2C4B75B700DE96F8 /* Dynamo Island.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamo Island.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A914F02C4B75B700DE96F8 /* Dynamo_IslandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamo_IslandApp.swift; sourceTree = "<group>"; };
 		94A914F22C4B75B700DE96F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,9 +61,19 @@
 		94A914F72C4B75B900DE96F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94A914FE2C4B7CD600DE96F8 /* SlideToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToggleStyle.swift; sourceTree = "<group>"; };
 		94A915002C4B864800DE96F8 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		94A9152B2C4BA90000DE96F8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		94439FB52C5144F90089DCF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94439FBA2C5144F90089DCF2 /* SwiftUI.framework in Frameworks */,
+				94439FB92C5144F90089DCF2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A914EA2C4B75B700DE96F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94439FBB2C5144F90089DCF2 /* OrderStatus */ = {
+			isa = PBXGroup;
+			children = (
+				94439FBC2C5144F90089DCF2 /* OrderStatusBundle.swift */,
+				94439FBE2C5144F90089DCF2 /* OrderStatusLiveActivity.swift */,
+				94439FC22C5144FB0089DCF2 /* Assets.xcassets */,
+				94439FC42C5144FB0089DCF2 /* Info.plist */,
+			);
+			path = OrderStatus;
+			sourceTree = "<group>";
+		};
 		94A914E42C4B75B700DE96F8 = {
 			isa = PBXGroup;
 			children = (
 				94A914EF2C4B75B700DE96F8 /* Dynamo Island */,
+				94439FBB2C5144F90089DCF2 /* OrderStatus */,
+				94A915282C4BA90000DE96F8 /* Frameworks */,
 				94A914EE2C4B75B700DE96F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				94A914ED2C4B75B700DE96F8 /* Dynamo Island.app */,
+				94439FB82C5144F90089DCF2 /* OrderStatusExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +117,7 @@
 		94A914EF2C4B75B700DE96F8 /* Dynamo Island */ = {
 			isa = PBXGroup;
 			children = (
+				94439FCC2C5145D10089DCF2 /* Dynamo-Island-Info.plist */,
 				94A914F02C4B75B700DE96F8 /* Dynamo_IslandApp.swift */,
 				94A914F22C4B75B700DE96F8 /* ContentView.swift */,
 				94A914FE2C4B7CD600DE96F8 /* SlideToggleStyle.swift */,
@@ -86,9 +136,35 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		94A915282C4BA90000DE96F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94A9152B2C4BA90000DE96F8 /* SwiftUI.framework */,
+				9475CBFE2C5124850020DEB6 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		94439FB72C5144F90089DCF2 /* OrderStatusExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94439FC82C5144FB0089DCF2 /* Build configuration list for PBXNativeTarget "OrderStatusExtension" */;
+			buildPhases = (
+				94439FB42C5144F90089DCF2 /* Sources */,
+				94439FB52C5144F90089DCF2 /* Frameworks */,
+				94439FB62C5144F90089DCF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrderStatusExtension;
+			productName = OrderStatusExtension;
+			productReference = 94439FB82C5144F90089DCF2 /* OrderStatusExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		94A914EC2C4B75B700DE96F8 /* Dynamo Island */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94A914FB2C4B75B900DE96F8 /* Build configuration list for PBXNativeTarget "Dynamo Island" */;
@@ -101,8 +177,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				94439FC62C5144FB0089DCF2 /* PBXTargetDependency */,
 			);
 			name = "Dynamo Island";
+			packageProductDependencies = (
+			);
 			productName = "Dynamo Island";
 			productReference = 94A914ED2C4B75B700DE96F8 /* Dynamo Island.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +196,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					94439FB72C5144F90089DCF2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					94A914EC2C4B75B700DE96F8 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -131,16 +213,27 @@
 				Base,
 			);
 			mainGroup = 94A914E42C4B75B700DE96F8;
+			packageReferences = (
+			);
 			productRefGroup = 94A914EE2C4B75B700DE96F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				94A914EC2C4B75B700DE96F8 /* Dynamo Island */,
+				94439FB72C5144F90089DCF2 /* OrderStatusExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		94439FB62C5144F90089DCF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94439FC32C5144FB0089DCF2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A914EB2C4B75B700DE96F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,20 +246,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		94439FB42C5144F90089DCF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94439FBD2C5144F90089DCF2 /* OrderStatusBundle.swift in Sources */,
+				94439FBF2C5144F90089DCF2 /* OrderStatusLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A914E92C4B75B700DE96F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				94A915012C4B864800DE96F8 /* ColorPickerView.swift in Sources */,
-				94A914FF2C4B7CD600DE96F8 /* SlideToggleStyle.swift in Sources */,
+				9475CBF62C5122390020DEB6 /* SlideToggleStyle.swift in Sources */,
 				94A914F32C4B75B700DE96F8 /* ContentView.swift in Sources */,
+				94439FCB2C51452F0089DCF2 /* OrderStatusLiveActivity.swift in Sources */,
 				94A914F12C4B75B700DE96F8 /* Dynamo_IslandApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		94439FC62C5144FB0089DCF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94439FB72C5144F90089DCF2 /* OrderStatusExtension */;
+			targetProxy = 94439FC52C5144FB0089DCF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		94439FC92C5144FB0089DCF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7DSGM69CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OrderStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.shubhamnanda.Dynamo-Island.Dynamo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94439FCA2C5144FB0089DCF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7DSGM69CYA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrderStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OrderStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.shubhamnanda.Dynamo-Island.Dynamo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		94A914F92C4B75B900DE96F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -289,6 +454,7 @@
 		94A914FC2C4B75B900DE96F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,11 +463,13 @@
 				DEVELOPMENT_TEAM = 7DSGM69CYA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dynamo-Island-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,6 +487,7 @@
 		94A914FD2C4B75B900DE96F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,11 +496,13 @@
 				DEVELOPMENT_TEAM = 7DSGM69CYA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dynamo-Island-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,6 +520,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		94439FC82C5144FB0089DCF2 /* Build configuration list for PBXNativeTarget "OrderStatusExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94439FC92C5144FB0089DCF2 /* Debug */,
+				94439FCA2C5144FB0089DCF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		94A914E82C4B75B700DE96F8 /* Build configuration list for PBXProject "Dynamo Island" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
