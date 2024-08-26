@@ -30,8 +30,14 @@ struct OrderStatusLiveActivity: Widget {
                     Text("Trailing")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    // More content
+                    Button("tap") {
+                        print("tapped")}
                 }
+                DynamicIslandExpandedRegion(.center) {
+                    Text("center")
+                    
+                }
+               
             } compactLeading: {
                 Text("L")
             } compactTrailing: {

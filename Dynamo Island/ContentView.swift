@@ -62,18 +62,17 @@ struct ContentView: View {
                 .onChange(of: isOn) { newValue in
                     Task {
                         if newValue {
-                          
-//                            await addLiveActivity()
+                            await addLiveActivity()
                             print("on")
                             print("\(selectedColor)")
                         } else {
-//                            await endActivity()
+                            await endActivity()
                         }
                     }
                 }
             }
             .padding()
-            
+          
         }
         .onAppear {
             if let savedColorData = UserDefaults.standard.data(forKey: colorKey),
